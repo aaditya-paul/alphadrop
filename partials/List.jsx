@@ -18,7 +18,9 @@ function List({item}) {
                   <h1 className="font-sigmar text-purple-500 text-xl">
                     {item.title}
                   </h1>
-                  <h1 className="font-poppins text-md">{item.about}</h1>
+                  <h1 className="font-poppins text-md text-slate-300">
+                    {item.about}
+                  </h1>
                   <div className="flex my-5">
                     <button className="bg-violet-500 hover:bg-violet-600 py-1 px-5 md:py-1 md:px-10 rounded-md font-sigmar text-white text-xs">
                       BUY
