@@ -3,12 +3,14 @@ import FlatList from "flatlist-react";
 import Logo from "../assets/logo.png";
 import Blog1 from "../assets/blogs/blog1.jpg";
 import Blog2 from "../assets/blogs/blog2.jpg";
-import List from "@/partials/List";
+import Blog3 from "../assets/blogs/blog3.jpg";
+import {ListDetailed} from "@/partials/List.jsx";
 
 const products = [
   {
     title: "Products #1",
-    about:
+    about: "Lorem ipsum dolor sit amet.",
+    details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt eum esse possimus maxime saepe optio? Assumenda ullam qui tempora dolore deserunt, iusto delectus quia recusandae numquam, voluptas totam? Tempore, eius reprehenderit! Tempora blanditiis tenetur aliquam cumque porro illo perspiciatis eligendi itaque ea consequatur nisi, dicta quae sit suscipit commodi quia, aut vel modi, ullam sapiente? Perferendis facilis laborum, voluptatum aperiam necessitatibus id odio.",
     price: "500",
     slug: "product-1",
@@ -16,31 +18,35 @@ const products = [
   },
   {
     title: "Products #2",
-    about:
+    about: "Lorem ipsum dolor sit amet.",
+    details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt eum esse possimus maxime saepe optio? Assumenda ullam qui tempora dolore deserunt, iusto delectus quia recusandae numquam, voluptas totam? Tempore, eius reprehenderit! Tempora blanditiis tenetur aliquam cumque porro illo perspiciatis eligendi itaque ea consequatur nisi, dicta quae sit suscipit commodi quia, aut vel modi, ullam sapiente? Perferendis facilis laborum, voluptatum aperiam necessitatibus id odio.",
     price: "500",
     slug: "product-2",
-    thumbnail: Blog1,
+    thumbnail:
+      "https://images.unsplash.com/photo-1682686581295-7364cabf5511?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
   {
     title: "Products #3",
-    about:
+    about: "Lorem ipsum dolor sit amet.",
+    details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt eum esse possimus maxime saepe optio? Assumenda ullam qui tempora dolore deserunt, iusto delectus quia recusandae numquam, voluptas totam? Tempore, eius reprehenderit! Tempora blanditiis tenetur aliquam cumque porro illo perspiciatis eligendi itaque ea consequatur nisi, dicta quae sit suscipit commodi quia, aut vel modi, ullam sapiente? Perferendis facilis laborum, voluptatum aperiam necessitatibus id odio.",
     price: "500",
     slug: "product-3",
-    thumbnail: Blog2,
+    thumbnail:
+      "https://images.unsplash.com/photo-1600439614353-174ad0ee3b25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
   },
 ];
 
-function Posts() {
+function BestSellers() {
   return (
-    <div className="mt-3 md:mt-5">
+    <div className="mt-3 lg:mt-5">
       <h1 className="font-sigmar text-fuchsia-300 underline decoration-dashed underline-offset-8 text-2xl md:text-4xl mb-2 md:mb-9">
         Our Best Sellers
       </h1>
-      <List item={products} />
+      <ListDetailed item={products} />
     </div>
   );
 }
 
-export default Posts;
+export default BestSellers;

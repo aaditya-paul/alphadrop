@@ -1,14 +1,18 @@
 import Cards from "@/components/Cards";
+import Categories from "@/components/Categories";
 import Header from "@/components/Header";
 import React from "react";
 
 function index() {
   return (
     <>
-      <Header />
-
-      {/* blogs */}
-      <Cards />
+      <div>
+        <Header />
+        {/* blogs */}
+        <Cards />
+        {/* categories */}
+        <Categories />
+      </div>
     </>
   );
 }

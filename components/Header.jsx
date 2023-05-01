@@ -7,8 +7,8 @@ import SideBar from "@/partials/SideBar";
 function Header() {
   return (
     <div>
-      <nav className=" flex justify-between px-5 pt-3 lg:px-9 lg:pt-3 items-center">
-        <Link href="#">
+      <nav className="md:w-5/6 flex justify-between px-5 pt-3 lg:px-9 lg:pt-3 items-center">
+        <Link href="/">
           <Image src={Logo} alt="Alphadrop" width={80} height={80} />
         </Link>
 

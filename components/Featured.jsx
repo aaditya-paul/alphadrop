@@ -7,13 +7,22 @@ function Featured() {
     <>
       {/* Featured Post */}
 
-      <div className="flex flex-col md:flex-row break-normal justify-center mb:3 md:mb-5">
-        <Image
-          src={Blog1}
-          alt="blog1"
-          className=" w-full md:w-[32rem] rounded-xl scale-100 md:scale-100 md:hover:scale-105 transition ease-linear "
-        />
-        <div className="md:pl-7 md:p-0 pt-1 ">
+      <div className="flex flex-col lg:flex-row break-normal justify-center mb:3 md:mb-5">
+        <div>
+          <Image
+            src={
+              "https://images.pexels.com/photos/1448136/pexels-photo-1448136.jpeg?auto=compress&cs=tinysrgb&w=2200&h=1238&dpr=1"
+            }
+            alt="blog1"
+            style={{
+              objectFit: "cover",
+            }}
+            width={2200}
+            height={1238}
+            className=" rounded-xl scale-100 md:scale-100 md:hover:scale-105 transition ease-linear "
+          />
+        </div>
+        <div className="lg:pl-7 lg:p-0 pt-1 ">
           <h1 className="text-lg md:text-3xl font-sigmar text-purple-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </h1>

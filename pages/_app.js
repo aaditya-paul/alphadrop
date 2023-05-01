@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 export default function App({Component, pageProps}) {
   return (
-    <main className={`${sigmar.variable} ${poppins.variable} bg-black`}>
+    <main className={`${sigmar.variable} ${poppins.variable} bg-black `}>
       <Component {...pageProps} />
     </main>
   );
