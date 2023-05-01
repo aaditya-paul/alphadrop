@@ -113,8 +113,6 @@ export function ListCategories({item, type}) {
                 <Image
                   src={item.image}
                   alt={item.name}
-                  // width={100}
-                  // height={100}
                   className="absolute -z-10 opacity-40 rounded-xl"
                   fill
                 />
