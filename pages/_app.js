@@ -2,6 +2,11 @@ import "@/styles/globals.css";
 import {Sigmar_One, Poppins} from "next/font/google";
 import {config} from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from "react";
+
 config.autoAddCss = false;
 
 const sigmar = Sigmar_One({
@@ -17,8 +22,15 @@ const poppins = Poppins({
 });
 
 export default function App({Component, pageProps}) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <main className={`${sigmar.variable} ${poppins.variable} bg-black `}>
+      <Head>
+        <title>AlphaDrop</title>
+      </Head>
       <Component {...pageProps} />
     </main>
   );

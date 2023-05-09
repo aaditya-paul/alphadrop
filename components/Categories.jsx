@@ -34,7 +34,7 @@ const categories = [
   },
 
   {
-    name: "See more...",
+    name: "Browse All ...",
     url: "products",
     image:
       "https://images.unsplash.com/photo-1673767421052-403aa824e47e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
@@ -43,7 +43,7 @@ const categories = [
 
 function Categories() {
   return (
-    <div className="mt-10 flex justify-center h-full md:w-4/6 lg:w-5/6 p-1 md:p-5 m-1">
+    <div className="mt-10 flex justify-center h-full p-1 md:p-5 m-1">
       <ListCategories item={categories} />
     </div>
   );
